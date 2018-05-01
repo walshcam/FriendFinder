@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "UCF Bootcamp week 7 homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walshcam/FriendFinder.git"
+  },
+  "author": "Cameron Walsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walshcam/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/walshcam/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bulma": "^0.7.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
