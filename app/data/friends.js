@@ -1,4 +1,3 @@
-let newCharacter = require("./../public/javascript/server.js");
 
 let characters = [{
     "name": "Phil",
@@ -16,7 +15,5 @@ let characters = [{
         2
     ]
 }];
-
-characters = newCharacter;
 
 module.exports = characters;
