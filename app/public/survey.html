@@ -30,7 +30,7 @@
                         <!-- Dropdown for top right navigation -->
                         <div id = "navbarMenu" class = "navbar-menu">
                             <div class = "navbar-end">
-                                <a class = "navbar-item is-active">
+                                <a class = "navbar-item is-active" href = "./home.html">
                                     Friend Finder
                                 </a>
                                 <a class = "navbar-item">
@@ -64,7 +64,7 @@
             <div class = "hero-foot">
                 <nav class = "tabs is-boxed is-fullwidth">
                     <ul>
-                        <li><a>API Friendslist</a></li>
+                        <li><a href = "./../../api/friends">API Friendslist</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>Github</a></li>
                         <li><a>LinkedIn</a></li>
@@ -338,9 +338,23 @@
 
         <section class = "section">
                 <div class="control">
-                    <button id = "newCharacter" class="button is-primary">Submit</button>
+                    <button id = "newCharacter" class="button is-primary" data-target="modal-bis">Submit</button>
                 </div>  
         </section>
+
+        <!-- *******************MODAL***************************** -->
+
+        <div class="modal">
+            <div class="modal-background">
+
+            </div>
+            <div class="modal-content">
+                <p class="image is-4by3" id = "modalImage">
+                    <img id = "bestMatchPhoto">
+                    <p class = "subtitle" id = "bestMatchName"></p>
+                </p>
+            </div>
+        </div>
 
         <!-- JQUERY********************** -->
 
@@ -350,9 +364,8 @@
             crossorigin="anonymous"></script>
 
         <!-- ***************JAVASCRIPT********************* -->
-
+        <script src="https://d3js.org/d3.v5.min.js"></script>
         <script async type="text/javascript" src="javascript/bulmaJavascript.js"></script>
         <script type="text/javascript" src="javascript/survey.js"></script>
-
     </body>
 </html>

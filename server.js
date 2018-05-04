@@ -3,6 +3,7 @@
 let express = require("express");
 let bodyParser = require("body-parser");
 let path = require("path");
+var $ = require("jquery");
 
 // Sets up the Express App
 // =============================================================
@@ -19,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'app/public')));
 // =============================================================
 
 require ('./app/routing/htmlRoutes.js')(app, path);
-require ('./app/routing/apiRoutes.js')(app, path);
+require ('./app/routing/apiRoutes.js')(app, path, $);
 
 // Routes user to first setup page
 // =============================================================

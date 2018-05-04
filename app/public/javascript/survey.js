@@ -23,8 +23,22 @@ $("#newCharacter").on("click", function() {
             "scores": scores
         }
 
-    $.post("api/characters", newCharacter)
+    $.post("api/friends", newCharacter)
         .then(function(data) {
             console.log(data)
         });
+
+    //Dynamically Create Modal Content
+    $("#bestMatchPhoto").attr("src","images/animal-nature-ocean-51964.jpg");
+    $("#bestMatchName").text("I haven't figured this last bit out yet, but here's a picture of a fail whale! Look in the terminal to see your match...");
+
+    //activate modal
+    $(".modal").addClass('is-active')
+    
 });
+
+//Modal Close
+
+$(".modal-background").on("click", function () {
+    $(".modal").removeClass("is-active")
+})

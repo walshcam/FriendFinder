@@ -14,6 +14,21 @@ let characters = [{
         1,
         2
     ]
+},{
+    "name": "Steve",
+    "photo": "https://www.pexels.com/photo/adult-beard-black-jacket-cup-373899/",
+    "scores": [
+        5,
+        3,
+        2,
+        5,
+        5,
+        3,
+        1,
+        2,
+        5,
+        4
+    ]
 }];
 
 module.exports = characters;
